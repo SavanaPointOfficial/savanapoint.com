@@ -116,7 +116,7 @@ export default function AgricultureBlog() {
           <div className="mt-12 p-6 bg-green-50 rounded-lg border border-green-200">
             <h3 className="text-xl font-semibold text-green-800 mb-4">Descubra como a SavanaPoint pode transformar sua fazenda</h3>
             <p className="text-green-700 mb-4">Quer saber mais sobre como as soluções tecnológicas da SavanaPoint podem ajudar a modernizar sua produção agrícola? Entre em contato conosco para uma consulta personalizada.</p>
-            <a href="#" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
+            <a href="mailto:hello@savanapoint.com" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
               Fale com um especialista
               <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
             </a>
