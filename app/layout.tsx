@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Waza Ink",
-  description: "Stay up with us every single day",
+  title: "Waza Courses",
+  description: "Welcome and boost your skills",
 };
 
 export default function RootLayout({
