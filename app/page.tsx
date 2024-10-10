@@ -59,7 +59,7 @@ export default function WaitlistPage() {
               height={400}
               className="rounded-lg shadow-xl"
             />
-          </div>
+          </div>   
         </div>
         <div className="mt-16">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">Why Choose Englishfixe?</h2>
