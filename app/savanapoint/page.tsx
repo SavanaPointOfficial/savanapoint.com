@@ -92,7 +92,7 @@ export default function BlogPage() {
           <div className="mt-12 p-6 bg-gray-100 rounded-lg">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Saiba mais sobre a SavanaPoint</h3>
             <p className="text-gray-700 mb-4">Quer conhecer mais sobre como a SavanaPoint está revolucionando o acesso à saúde em Moçambique? Entre em contato conosco para descobrir como podemos ajudar a transformar o atendimento médico em sua região.</p>
-            <a href="https://savanapoint.com" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
+            <a target='_blank' href="https://savanapoint.com" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
               Entre em contato
               <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
             </a>
