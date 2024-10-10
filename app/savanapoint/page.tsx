@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Bus, Car, Bike, Zap } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function UrbanMobilityBlog() {
   return (
@@ -98,10 +99,12 @@ export default function UrbanMobilityBlog() {
           <div className="mt-12 p-6 bg-gray-800 rounded-lg">
             <h3 className="text-xl font-semibold text-gray-100 mb-4">Saiba mais sobre as soluções de mobilidade da SavanaPoint</h3>
             <p className="text-gray-300 mb-4">Quer conhecer mais sobre como a SavanaPoint está revolucionando a mobilidade urbana em Moçambique? Entre em contato conosco para descobrir como podemos ajudar a transformar sua cidade.</p>
+            <Link href="https://savanapoint.com" target="_blank">
             <Button className="bg-green-500 hover:bg-green-600 text-white">
               Entre em contato
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            </Link>
           </div>
         </article>
       </main>
