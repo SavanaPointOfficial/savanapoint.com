@@ -1,128 +1,111 @@
-import Image from 'next/image'
-import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Bus, Car, Bike, Zap } from "lucide-react"
+import Image from "next/image"
 
-export default function AgricultureBlog() {
+export default function UrbanMobilityBlog() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gray-900 text-gray-100">
+    
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <article className="prose lg:prose-xl">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">
-            Agricultura e Tecnologia: Como a SavanaPoint Está Ajudando a Modernizar o Setor Agrícola
+        <article className="prose prose-invert lg:prose-xl">
+          <h1 className="text-3xl font-bold text-gray-100 mb-6">
+            Mobilidade Urbana Inteligente: O Papel da SavanaPoint no Futuro das Cidades Moçambicanas
           </h1>
           
           <Image
-            src="https://images.pexels.com/photos/28834370/pexels-photo-28834370/free-photo-of-tomates-organicos-frescos-em-cesta-trancada.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-            alt="Agricultura moderna em Moçambique"
+            src="https://images.pexels.com/photos/6280948/pexels-photo-6280948.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Mobilidade urbana em Moçambique"
             width={800}
             height={400}
             className="rounded-lg shadow-md mb-8"
           />
 
-          <p className="text-lg text-gray-700 mb-8">
-            A agricultura é um dos pilares da economia moçambicana, empregando uma grande parte da população e sendo uma importante fonte de sustento para milhares de famílias. No entanto, o setor agrícola enfrenta inúmeros desafios que dificultam a maximização da produção e a sustentabilidade dos pequenos e grandes produtores. Esses desafios vão desde a baixa produtividade até a falta de acesso a tecnologias modernas que podem transformar a forma como a agricultura é praticada. A SavanaPoint, com seu foco em soluções tecnológicas inovadoras, está trazendo mudanças significativas para o setor agrícola em Moçambique, ajudando a modernizar e otimizar o gerenciamento de fazendas, prever colheitas e melhorar a conectividade entre agricultores e mercados.
+          <p className="text-gray-300 mb-8">
+            A mobilidade urbana é um dos maiores desafios enfrentados pelas cidades em rápido crescimento, e Moçambique não é exceção. Com o aumento populacional e a falta de infraestrutura adequada, problemas como congestionamento, poluição e transporte público ineficiente afetam diariamente a vida dos cidadãos. Nesse cenário, a SavanaPoint está utilizando a tecnologia para transformar o futuro da mobilidade nas cidades moçambicanas, promovendo soluções inteligentes que visam melhorar o transporte público, incentivar caronas compartilhadas e apoiar o uso de meios de transporte sustentáveis.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-4">
-            Desafios do Setor Agrícola em Moçambique
+          <h2 className="text-2xl font-semibold text-gray-100 mt-12 mb-4">
+            Os Problemas Atuais de Mobilidade Urbana
           </h2>
-          <p className="text-gray-700 mb-4">
-            O setor agrícola de Moçambique enfrenta uma série de obstáculos que afetam sua produtividade e eficiência. Alguns dos desafios mais comuns incluem:
+          <p className="text-gray-300 mb-4">
+            As cidades moçambicanas enfrentam vários problemas no que diz respeito à mobilidade urbana. Alguns dos principais desafios incluem:
           </p>
-          <ul className="list-none pl-0 mb-6 space-y-4">
-            <li className="flex items-start">
-              <CheckCircle2 className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" />
-              <span><strong>Falta de Acesso à Tecnologia:</strong> A maioria dos agricultores moçambicanos ainda utiliza métodos tradicionais de cultivo, que, apesar de funcionarem em pequena escala, são ineficazes para aumentar a produtividade e melhorar a eficiência no campo.</span>
+          <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-300">
+            <li>
+              <strong className="text-gray-100">Congestionamento de Trânsito:</strong> O número crescente de veículos nas cidades, combinado com a falta de planejamento urbano adequado, resulta em congestionamentos frequentes, especialmente nas áreas centrais. Esse problema leva a longos tempos de deslocamento e uma maior emissão de gases poluentes.
             </li>
-            <li className="flex items-start">
-              <CheckCircle2 className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" />
-              <span><strong>Baixa Conectividade Rural:</strong> Agricultores em áreas rurais têm dificuldades em acessar mercados e informações sobre preços, condições climáticas e técnicas agrícolas modernas. Isso os deixa vulneráveis a variações de mercado e condições climáticas adversas.</span>
+            <li>
+              <strong className="text-gray-100">Transporte Público Ineficiente:</strong> O transporte público em muitas áreas é insuficiente para atender à demanda crescente. A frota de ônibus é limitada, e os horários são irregulares, forçando muitos cidadãos a dependerem de táxis ou de transportes informais, que nem sempre são seguros ou acessíveis.
             </li>
-            <li className="flex items-start">
-              <CheckCircle2 className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" />
-              <span><strong>Gestão Ineficiente das Fazendas:</strong> Muitos produtores carecem de ferramentas eficazes para gerenciar suas operações agrícolas de forma mais eficiente, incluindo o monitoramento de colheitas, o uso de insumos e a análise de dados sobre o solo e as condições climáticas.</span>
-            </li>
-            <li className="flex items-start">
-              <CheckCircle2 className="h-6 w-6 text-green-500 mr-2 flex-shrink-0" />
-              <span><strong>Mudanças Climáticas:</strong> A agricultura em Moçambique é fortemente impactada por mudanças climáticas, o que pode resultar em secas ou enchentes que afetam drasticamente as safras. A falta de previsão e monitoramento adequado dificulta a adaptação dos agricultores a essas condições.</span>
+            <li>
+              <strong className="text-gray-100">Falta de Infraestrutura para Transportes Sustentáveis:</strong> Embora o uso de bicicletas ou transporte elétrico possa ajudar a reduzir o impacto ambiental, a infraestrutura para esses meios de transporte é praticamente inexistente nas cidades moçambicanas. As ciclovias são poucas, e a falta de segurança nas estradas desencoraja o uso de alternativas sustentáveis.
             </li>
           </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-4">
-            Soluções Tecnológicas Oferecidas pela SavanaPoint
+          <h2 className="text-2xl font-semibold text-gray-100 mt-12 mb-4">
+            Soluções Inteligentes para Transporte Público e Privado
           </h2>
-          <p className="text-gray-700 mb-6">
-            A SavanaPoint está trazendo uma série de inovações tecnológicas para transformar esses desafios em oportunidades. Utilizando a digitalização e tecnologias de ponta, a startup está facilitando a modernização do setor agrícola em Moçambique de várias maneiras:
+          <p className="text-gray-300 mb-6">
+            A SavanaPoint está à frente da revolução da mobilidade urbana inteligente em Moçambique, desenvolvendo uma série de soluções tecnológicas que visam melhorar tanto o transporte público quanto o privado.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-green-600">Plataformas de Gerenciamento Agrícola</h3>
-              <p className="text-gray-600">A SavanaPoint oferece plataformas digitais que permitem aos agricultores monitorar suas fazendas em tempo real, gerenciando colheitas, insumos e dados climáticos de forma mais eficaz.</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <Bus className="h-8 w-8 text-green-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Aplicativos de Gestão de Transporte Público</h3>
+              <p className="text-gray-300">A SavanaPoint está desenvolvendo aplicativos que ajudam a otimizar o transporte público, permitindo que os usuários vejam em tempo real a localização dos ônibus, os horários e rotas disponíveis.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-green-600">Previsão de Colheitas Baseada em Dados</h3>
-              <p className="text-gray-600">Utilizando análise de dados e inteligência artificial, a SavanaPoint desenvolveu soluções para ajudar agricultores a prever a produtividade das colheitas com base em padrões climáticos e históricos de plantio.</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <Car className="h-8 w-8 text-green-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Caronas Compartilhadas</h3>
+              <p className="text-gray-300">Através de plataformas digitais, os cidadãos podem se conectar com outras pessoas que fazem trajetos similares, reduzindo o número de carros nas ruas e, consequentemente, os congestionamentos.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-green-600">Conectividade entre Agricultores e Mercados</h3>
-              <p className="text-gray-600">A startup criou uma rede digital que conecta agricultores diretamente aos mercados, proporcionando acesso a informações sobre preços justos, compradores e parceiros comerciais.</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <Bike className="h-8 w-8 text-green-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Transporte Sustentável</h3>
+              <p className="text-gray-300">A SavanaPoint está desenvolvendo soluções de compartilhamento de bicicletas, com estações em áreas estratégicas das cidades, permitindo que os usuários façam pequenos trajetos sem a necessidade de carros ou motos.</p>
             </div>
-            <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-2 text-green-600">Treinamento e Capacitação Digital</h3>
-              <p className="text-gray-600">A SavanaPoint também oferece plataformas de treinamento online, onde agricultores podem aprender sobre as melhores práticas agrícolas, uso de tecnologias modernas e métodos de cultivo sustentáveis.</p>
+            <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+              <Zap className="h-8 w-8 text-green-500 mb-4" />
+              <h3 className="text-xl font-semibold mb-2 text-gray-100">Veículos Elétricos</h3>
+              <p className="text-gray-300">A SavanaPoint está trabalhando para promover o uso de veículos elétricos, integrando essa opção nos aplicativos de transporte.</p>
             </div>
           </div>
 
-          <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-4">
-            Agricultura de Precisão e Conectividade Rural
+          <h2 className="text-2xl font-semibold text-gray-100 mt-12 mb-4">
+            A Importância de Cidades Mais Conectadas e Sustentáveis
           </h2>
-          <p className="text-gray-700 mb-6">
-            Uma das maiores inovações que a SavanaPoint está trazendo para a agricultura em Moçambique é a <strong>agricultura de precisão</strong>. Utilizando tecnologias como sensores, drones e satélites, a agricultura de precisão permite o monitoramento detalhado de campos agrícolas, medindo condições de solo, níveis de umidade e crescimento de plantas em tempo real. Essas informações são essenciais para ajustar a irrigação, o uso de fertilizantes e a colheita de forma a maximizar a produtividade e reduzir perdas.
-          </p>
-          <p className="text-gray-700 mb-6">
-            A agricultura de precisão também facilita a tomada de decisões mais informadas, ajudando os agricultores a saber exatamente quando plantar, irrigar e colher. Isso reduz o desperdício de insumos e aumenta a eficiência geral das operações agrícolas.
-          </p>
-          <p className="text-gray-700 mb-6">
-            Outro avanço importante promovido pela SavanaPoint é o aumento da <strong>conectividade rural</strong>. Em muitas áreas rurais, o acesso à internet ainda é limitado, o que dificulta a comunicação entre agricultores e o mercado. A SavanaPoint está desenvolvendo soluções para melhorar a conectividade nessas áreas, permitindo que os agricultores tenham acesso a informações vitais, como previsões meteorológicas, recomendações de especialistas e preços de mercado em tempo real.
+          <p className="text-gray-300 mb-6">
+            Cidades mais conectadas e sustentáveis não apenas melhoram a mobilidade urbana, mas também oferecem uma melhor qualidade de vida para seus cidadãos. A SavanaPoint acredita que a tecnologia desempenha um papel crucial em tornar as cidades moçambicanas mais inteligentes, conectando pessoas, veículos e infraestruturas de maneira eficiente e segura.
           </p>
 
-          <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-4">
-            Casos de Sucesso no Uso de Tecnologia no Campo
+          <h2 className="text-2xl font-semibold text-gray-100 mt-12 mb-4">
+            Impactos da Tecnologia na Qualidade de Vida Urbana
           </h2>
-          <p className="text-gray-700 mb-4">
-            Diversos agricultores já estão colhendo os benefícios das soluções tecnológicas oferecidas pela SavanaPoint. Por exemplo:
+          <p className="text-gray-300 mb-6">
+            A mobilidade urbana inteligente pode ter um impacto profundo na qualidade de vida das pessoas. As iniciativas da SavanaPoint visam transformar as cidades moçambicanas em locais mais eficientes, sustentáveis e agradáveis para viver.
           </p>
-          <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
-            <li>
-              <strong>Pequenos produtores de milho</strong> em áreas rurais agora conseguem prever suas colheitas com mais precisão, utilizando dados sobre clima e solo, o que permite planejar melhor o plantio e maximizar a produção. Como resultado, esses agricultores reduziram significativamente as perdas e aumentaram seus lucros.
-            </li>
-            <li>
-              <strong>Fazendas de horticultura</strong> em regiões semiáridas estão utilizando a tecnologia de sensores da SavanaPoint para monitorar o nível de umidade do solo, ajustando automaticamente os sistemas de irrigação para evitar desperdício de água. Isso é especialmente importante em áreas onde o acesso à água é limitado.
-            </li>
-            <li>
-              <strong>Cooperativas agrícolas</strong> que utilizam as plataformas de conectividade da SavanaPoint agora têm acesso direto a mercados mais amplos, conseguindo vender seus produtos por preços justos e sem intermediários. Isso tem melhorado consideravelmente a renda das famílias envolvidas nessas cooperativas.
-            </li>
-          </ul>
 
-          <h2 className="text-2xl font-semibold text-gray-900 mt-12 mb-4">
+          <h2 className="text-2xl font-semibold text-gray-100 mt-12 mb-4">
             Conclusão
           </h2>
-          <p className="text-gray-700 mb-6">
-            A SavanaPoint está desempenhando um papel crucial na modernização do setor agrícola em Moçambique. Ao integrar soluções tecnológicas inovadoras, a startup está ajudando a transformar a maneira como agricultores gerenciam suas fazendas, se conectam ao mercado e se preparam para desafios climáticos. Tanto pequenos quanto grandes produtores estão se beneficiando dessas inovações, que promovem o aumento da produtividade, a redução de perdas e o fortalecimento da agricultura como um motor econômico no país.
+          <p className="text-gray-300 mb-6">
+            A SavanaPoint está desempenhando um papel fundamental na transformação da mobilidade urbana em Moçambique, utilizando a tecnologia para enfrentar os desafios do trânsito, da poluição e do transporte público ineficiente. Com soluções inteligentes e sustentáveis, a startup está ajudando a construir cidades mais conectadas, acessíveis e seguras, garantindo uma melhor qualidade de vida para todos os cidadãos.
           </p>
-          <p className="text-gray-700 mb-6">
-            A combinação de agricultura de precisão, conectividade rural e plataformas de gerenciamento agrícola posiciona a SavanaPoint como um parceiro estratégico no desenvolvimento sustentável da agricultura em Moçambique. À medida que mais agricultores adotam essas tecnologias, o setor agrícola moçambicano estará mais bem equipado para enfrentar os desafios do futuro, garantindo segurança alimentar e crescimento econômico para o país.
+          <p className="text-gray-300 mb-6">
+            À medida que a SavanaPoint continua a expandir suas iniciativas e promover a inovação no setor de mobilidade, Moçambique estará cada vez mais preparado para enfrentar os desafios de urbanização, crescimento populacional e mudanças climáticas. O futuro das cidades moçambicanas, com o apoio da tecnologia, será mais sustentável, eficiente e centrado nas necessidades das pessoas.
           </p>
 
-          <div className="mt-12 p-6 bg-green-50 rounded-lg border border-green-200">
-            <h3 className="text-xl font-semibold text-green-800 mb-4">Descubra como a SavanaPoint pode transformar sua fazenda</h3>
-            <p className="text-green-700 mb-4">Quer saber mais sobre como as soluções tecnológicas da SavanaPoint podem ajudar a modernizar sua produção agrícola? Entre em contato conosco para uma consulta personalizada.</p>
-            <a href="mailto:hello@savanapoint.com" className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700">
-              Fale com um especialista
-              <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />
-            </a>
+          <div className="mt-12 p-6 bg-gray-800 rounded-lg">
+            <h3 className="text-xl font-semibold text-gray-100 mb-4">Saiba mais sobre as soluções de mobilidade da SavanaPoint</h3>
+            <p className="text-gray-300 mb-4">Quer conhecer mais sobre como a SavanaPoint está revolucionando a mobilidade urbana em Moçambique? Entre em contato conosco para descobrir como podemos ajudar a transformar sua cidade.</p>
+            <Button className="bg-green-500 hover:bg-green-600 text-white">
+              Entre em contato
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
           </div>
         </article>
       </main>
+
     </div>
   )
 }
