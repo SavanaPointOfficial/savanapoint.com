@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Fly One",
-  description: "Create short, powerful links that drive more clicks and boost your online presence.",
+  title: "Englishfixe",
+  description: "Master English with Englishfixe",
 };
 
 export default function RootLayout({
