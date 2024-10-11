@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Englishfixe",
-  description: "Master English with Englishfixe",
+  title: "SavanaPoint",
+  description: "A SavanaPoint atua em áreas essenciais, levando tecnologia acessível e sustentável para todos, com foco na inclusão social e no impacto positivo. Exploramos os cinco pilares essenciais que nos definem: Funcionalidade, Utilidade, Beleza, Ergonomia e o Cliente no Centro de Tudo.",
 };
 
 export default function RootLayout({
